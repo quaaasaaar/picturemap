@@ -1,0 +1,21 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<div>
+  <div>
+      <label for="latitude">Latitude:</label>
+      <input id="latitude" type="number" [(ngModel)]="latitude" placeholder="Latitude">
+  </div>
+
+  <div>
+      <label for="longitude">Longitude:</label>
+      <input id="longitude" type="number" [(ngModel)]="longitude" placeholder="Longitude">
+  </div>
+  <button (click)="setCenter()">Go</button>
+</div>
+<div id="map" class="map"></div>
