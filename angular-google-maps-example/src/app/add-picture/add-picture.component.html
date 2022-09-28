@@ -1,0 +1,11 @@
+<p>add-picture works!</p>
+<div>
+  <label for="latitude">Latitude:</label>
+  <input id="latitude" type="number" [(ngModel)]="latitude" placeholder="Latitude">
+</div>
+
+<div>
+  <label for="longitude">Longitude:</label>
+  <input id="longitude" type="number" [(ngModel)]="longitude" placeholder="Longitude">
+</div>  <button (click)="markers.addMarker(latitude,longitude)">Add Marker</button>
+<a href="http://localhost:4200/map" >Go back to map</a>

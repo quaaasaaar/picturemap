@@ -1,0 +1,18 @@
+<ejs-maps id='maps-container'>
+  <e-layers>
+    <e-layer [shapeData] = 'shapeData' [markerSettings] = 'markerSettings'></e-layer>
+  </e-layers>
+</ejs-maps>
+<div>
+<div>
+  <label for="latitude">Latitude:</label>
+  <input id="latitude" type="number" [(ngModel)]="latitude" placeholder="Latitude">
+</div>
+
+<div>
+  <label for="longitude">Longitude:</label>
+  <input id="longitude" type="number" [(ngModel)]="longitude" placeholder="Longitude">
+</div>  <button (click)="this.markers.addMarker(latitude,longitude)">Add Marker</button>
+<a href="http://localhost:4200/addPicture" >Add Pictures</a>
+
+</div>
